@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Cameras</title>
+
+    <link rel="icon" href="assets/live-line-black.svg" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Font Awesome JS -->
+    <script defer src="fontawesome/js/solid.js"></script>
+    <script defer src="fontawesome/js/fontawesome.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar" class="active">
+        <div
+          class="sidebar-header d-flex flex-direction-row justify-content-center cursor-pointer"
+          id="home"
+        >
+          <img
+            class="unCollapse"
+            src="assets/live-line-gray.svg"
+            alt=""
+            height="50"
+          />
+
+          <img
+            class="collapse"
+            src="assets/live-line-gray.svg"
+            alt=""
+            height="40"
+          />
+        </div>
+
+        <ul class="list-unstyled components">
+          <li>
+            <a
+              href="#framesSubmenu"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+            >
+              <i class="fas fa-th"></i>
+
+              <span class="unCollapse">Quadros</span>
+
+              <span class="collapse"></span>
+            </a>
+            <ul class="collapse list-unstyled" id="framesSubmenu">
+              <li>
+                <a href="#" id="mosaico3x3">
+                  <i class="fas fa-th-large"></i>
+                  <span class="unCollapse">3x3</span>
+
+                  <span class="collapse">3x3</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" id="mosaico2x2">
+                  <i class="fas fa-th-large"></i>
+                  <span class="unCollapse">2x2</span>
+
+                  <span class="collapse">2x2</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" id="mosaico1x1">
+                  <i class="fas fa-th-large"></i>
+                  <span class="unCollapse">1x1</span>
+
+                  <span class="collapse">1x1</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" id="mosaico1">
+                  <i class="fas fa-th-large"></i>
+                  <span class="unCollapse">1</span>
+
+                  <span class="collapse">1</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li id="tombador01-menutoggle">
+            <a
+              href="#camsTombador1"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+            >
+              <i class="fas fa-play"></i>
+
+              <span class="unCollapse">Lista 01</span>
+
+              <span class="collapse">01</span>
+            </a>
+            <ul class="collapse list-unstyled" id="camsTombador1">
+              <li
+                id="tombador01-tc01"
+                onclick="insereUrlQuadroMosaico('http://100.117.40.31/mjpg/1/video.mjpg', 'tombador01-tc01',  1)"
+                ondblclick="removeUrlQuadroMosaico('http://100.117.40.31/mjpg/1/video.mjpg', 'tombador01-tc01')"
+              >
+                <a href="#">
+                  <i class="fas fa-video"></i>
+                  <span class="unCollapse">Trava chassis 01</span>
+
+                  <span class="collapse">TC01</span>
+                </a>
+              </li>
+
+              <li
+                id="tombador01-tc02"
+                onclick="insereUrlQuadroMosaico('http://100.117.40.32/mjpg/1/video.mjpg', 'tombador01-tc02',  1)"
+                ondblclick="removeUrlQuadroMosaico('http://100.117.40.32/mjpg/1/video.mjpg', 'tombador01-tc02')"
+              >
+                <a href="#">
+                  <i class="fas fa-video"></i>
+                  <span class="unCollapse">Trava chassis 02</span>
+
+                  <span class="collapse">TC02</span>
+                </a>
+              </li>
+
+              <li
+                id="tombador01-tpe"
+                onclick="insereUrlQuadroMosaico('http://100.117.40.33/mjpg/1/video.mjpg', 'tombador01-tpe',  1)"
+                ondblclick="removeUrlQuadroMosaico('http://100.117.40.33/mjpg/1/video.mjpg', 'tombador01-tpe')"
+              >
+                <a href="#">
+                  <i class="fas fa-video"></i>
+                  <span class="unCollapse">Trava pino esquerda</span>
+
+                  <span class="collapse">TPE</span>
+                </a>
+              </li>
+
+              <li
+                id="tombador01-tpd"
+                onclick="insereUrlQuadroMosaico('http://100.117.40.34/mjpg/1/video.mjpg', 'tombador01-tpd',  1)"
+                ondblclick="removeUrlQuadroMosaico('http://100.117.40.34/mjpg/1/video.mjpg', 'tombador01-tpd')"
+              >
+                <a href="#">
+                  <i class="fas fa-video"></i>
+                  <span class="unCollapse">Trava pino direita</span>
+
+                  <span class="collapse">TPD</span>
+                </a>
+              </li>
+
+              <li
+                id="tombador01-tre"
+                onclick="insereUrlQuadroMosaico('http://100.117.40.35/mjpg/1/video.mjpg', 'tombador01-tre',  1)"
+                ondblclick="removeUrlQuadroMosaico('http://100.117.40.35/mjpg/1/video.mjpg', 'tombador01-tre')"
+              >
+                <a href="#">
+                  <i class="fas fa-video"></i>
+                  <span class="unCollapse">Trava roda direita</span>
+
+                  <span class="collapse">TRD</span>
+                </a>
+              </li>
+
+              <li
+                id="tombador01-trd"
+                onclick="insereUrlQuadroMosaico('http://100.117.40.36/mjpg/1/video.mjpg', 'tombador01-trd',  1)"
+                ondblclick="removeUrlQuadroMosaico('http://100.117.40.36/mjpg/1/video.mjpg', 'tombador01-trd')"
+              >
+                <a href="#">
+                  <i class="fas fa-video"></i>
+                  <span class="unCollapse">Trava roda esquerda</span>
+
+                  <span class="collapse">TRE</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li id="tombador02-menutoggle">
+            <a
+              href="#camsTombador2"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+            >
+              <i class="fas fa-play"></i>
+
+              <span class="unCollapse">Lista 02</span>
+
+              <span class="collapse">02</span>
+            </a>
+
+            <ul class="collapse list-unstyled" id="camsTombador2">
+              <li
+                id="tombador02-tc01"
+                onclick="insereUrlQuadroMosaico('http://100.117.40.37/mjpg/1/video.mjpg', 'tombador02-tc01',  2)"
+                ondblclick="removeUrlQuadroMosaico('http://100.117.40.37/mjpg/1/video.mjpg', 'tombador02-tc01')"
+              >
+                <a href="#">
+                  <i class="fas fa-video"></i>
+                  <span class="unCollapse">Trava chassis 01</span>
+
+                  <span class="collapse">TC01</span>
+                </a>
+              </li>
+
+              <li
+                id="tombador02-tc02"
+                onclick="insereUrlQuadroMosaico('http://100.117.40.38/mjpg/1/video.mjpg', 'tombador02-tc02',  2)"
+                ondblclick="removeUrlQuadroMosaico('http://100.117.40.38/mjpg/1/video.mjpg', 'tombador02-tc02')"
+              >
+                <a href="#">
+                  <i class="fas fa-video"></i>
+                  <span class="unCollapse">Trava chassis 02</span>
+
+                  <span class="collapse">TC02</span>
+                </a>
+              </li>
+
+              <li
+                id="tombador02-tpe"
+                onclick="insereUrlQuadroMosaico('http://100.117.40.39/mjpg/1/video.mjpg', 'tombador02-tpe',  2)"
+                ondblclick="removeUrlQuadroMosaico('http://100.117.40.39/mjpg/1/video.mjpg', 'tombador02-tpe')"
+              >
+                <a href="#">
+                  <i class="fas fa-video"></i>
+                  <span class="unCollapse">Trava pino esquerda</span>
+
+                  <span class="collapse">TPE</span>
+                </a>
+              </li>
+
+              <li
+                id="tombador02-tpd"
+                onclick="insereUrlQuadroMosaico('http://100.117.40.40/mjpg/1/video.mjpg', 'tombador02-tpd',  2)"
+                ondblclick="removeUrlQuadroMosaico('http://100.117.40.40/mjpg/1/video.mjpg', 'tombador02-tpd')"
+              >
+                <a href="#">
+                  <i class="fas fa-video"></i>
+                  <span class="unCollapse">Trava pino direita</span>
+
+                  <span class="collapse">TPD</span>
+                </a>
+              </li>
+
+              <li
+                id="tombador02-tre"
+                onclick="insereUrlQuadroMosaico('http://100.117.40.41/mjpg/1/video.mjpg', 'tombador02-tre',  2)"
+                ondblclick="removeUrlQuadroMosaico('http://100.117.40.41/mjpg/1/video.mjpg', 'tombador02-tre')"
+              >
+                <a href="#">
+                  <i class="fas fa-video"></i>
+                  <span class="unCollapse">Trava roda direita</span>
+
+                  <span class="collapse">TRD</span>
+                </a>
+              </li>
+
+              <li
+                id="tombador02-trd"
+                onclick="insereUrlQuadroMosaico('http://100.117.40.42/mjpg/1/video.mjpg', 'tombador02-trd',  2)"
+                ondblclick="removeUrlQuadroMosaico('http://100.117.40.42/mjpg/1/video.mjpg', 'tombador02-trd')"
+              >
+                <a href="#">
+                  <i class="fas fa-video"></i>
+                  <span class="unCollapse">Trava roda esquerda</span>
+
+                  <span class="collapse">TRE</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="sidebar-footer">
+          <div id="iconCaretLeft"><i class="fas fa-caret-left fa-2x"></i></div>
+          <div id="iconCaretRight">
+            <i class="fas fa-caret-right fa-2x"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content" class="w-100 vh-100">
+        <div
+          class="col-12 mx-0 mt-3 p-0 d-flex align-items-center justify-content-center"
+        >
+          <img
+            src="assets/live-line-black.svg"
+            alt=""
+            style="height: 12%; width: 12%"
+          />
+          <h1 class="p-0 m-0 ml-2 text-center font-weight-bold">CÂMERAS</h1>
+        </div>
+        <div
+          class="row col-12 m-0 mt-5 mb-3 p-0 pt-5 d-flex align-items-center justify-content-center"
+        >
+          <h3 class="p-0 m-0 text-center font-weight-bold">
+            ESCOLHA NÚMERO DE QUADROS DO MOSAICO OU UMA CONFIGURAÇÃO PADRÃO
+          </h3>
+        </div>
+
+        <div
+          class="row col-12 m-0 p-0 d-flex align-items-center justify-content-center"
+        >
+          <div
+            id="btnConfigPadraoTombador01"
+            class="col-2 btn btn-primary m-0 mr-3 p-3 d-flex align-items-center justify-content-center"
+            style="height: 100px; border-radius: 10px"
+          >
+            <i class="fas fa-video fa-2x text-light"></i>
+
+            <span class="ml-2 font-weight-bold text-light">Preset 01</span>
+          </div>
+
+          <div
+            id="btnConfigPadraoTombador02"
+            class="col-2 btn btn-primary m-0 mr-3 p-3 d-flex align-items-center justify-content-center"
+            style="height: 100px; border-radius: 10px"
+          >
+            <i class="fas fa-video fa-2x text-light"></i>
+
+            <span class="ml-2 font-weight-bold text-light">Preset 02</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery  -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
